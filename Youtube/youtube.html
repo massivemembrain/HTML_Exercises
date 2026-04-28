@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Youtube Clone </title>
+    </head>
+    <style>
+        /*images keep dimension unless you alter the width AND the height*/
+        .thumbnail {
+            width: 300px;
+            height: 300px;
+            /*Cover will maintain its dimensions, but the image will likely be cut off*/
+            /*Conatin will show the entire image sacrificing extra white space*/
+            object-fit: contain;
+            /*where the image starts from considering it will get cut off*/
+            object-position: bottom;
+        }
+
+        .search-bar {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        
+    </style>
+    <body>
+        <!--Image element, it is void meaning it doesn't have a closing tag-->
+        <!--src attribute tell which image to display-->
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        <!--Text boxes, or checkbox -->
+        <input class="search-bar" type="text" placeholder="Search">
+    </body>
+</html>
+
