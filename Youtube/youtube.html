@@ -12,14 +12,18 @@
         }
 
         .search-bar {
+            display: block;
         }
 
         .video-title {
             width: 300px;
         }
 
-        .video-author, 
-        .video-stats {
+        .video-preview {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
         }
         
     </style>
@@ -27,19 +31,33 @@
         <!--Text boxes, or checkbox -->
         <input class="search-bar" type="text" placeholder="Search">
 
-        <!--Image element, it is void meaning it doesn't have a closing tag-->
-        <!--src attribute tell which image to display-->
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
 
-        <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-        </p>
-        <p class="video-author">
-            Marques Brownlee
-        </p>
-        <p class="video-stats">
-            3.4M views &#183; 6 months ago
-        </p>
+            <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+                Marques Brownlee
+            </p>
+            <p class="video-stats">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+            <p class="video-title">
+                Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+                Markiplier
+            </p>
+            <p class="video-stats">
+                19M views &#183; 4 years ago
+            </p>
+        </div>
     </body>
 </html>
 
@@ -53,3 +71,8 @@ Block element: an element that takes up the entire line: ex. a paragraph
 Inline block element: only take sup as much space as it needs to
 Inline elements: Nested within a text ex strong, u, span
 We can manipulate the type of element using the display property-->
+
+<!--div stands for division, but it is just a box
+By default it is a block element
+why use it? it can contain any other elements within it: it's a container
+block elements in div cannot exceed the dimensions of the div-->
