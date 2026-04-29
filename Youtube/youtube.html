@@ -8,26 +8,48 @@
         /*images keep dimension unless you alter the width AND the height*/
         .thumbnail {
             width: 300px;
-            height: 300px;
-            /*Cover will maintain its dimensions, but the image will likely be cut off*/
-            /*Conatin will show the entire image sacrificing extra white space*/
-            object-fit: contain;
-            /*where the image starts from considering it will get cut off*/
-            object-position: bottom;
+            display: block;
         }
 
         .search-bar {
-            font-size: 20px;
-            margin-left: 20px;
+        }
+
+        .video-title {
+            width: 300px;
+        }
+
+        .video-author, 
+        .video-stats {
         }
         
     </style>
     <body>
+        <!--Text boxes, or checkbox -->
+        <input class="search-bar" type="text" placeholder="Search">
+
         <!--Image element, it is void meaning it doesn't have a closing tag-->
         <!--src attribute tell which image to display-->
         <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-        <!--Text boxes, or checkbox -->
-        <input class="search-bar" type="text" placeholder="Search">
+
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+            Marques Brownlee
+        </p>
+        <p class="video-stats">
+            3.4M views &#183; 6 months ago
+        </p>
     </body>
 </html>
 
+<!--Cover will maintain its dimensions, but the image will likely be cut off
+Conatin will show the entire image sacrificing extra white space
+object-postition pairs with object fit-->
+
+<!--Lesson 8:
+Display property in CSS is the reason paragraphs always get a new line while other elements do not
+Block element: an element that takes up the entire line: ex. a paragraph
+Inline block element: only take sup as much space as it needs to
+Inline elements: Nested within a text ex strong, u, span
+We can manipulate the type of element using the display property-->
