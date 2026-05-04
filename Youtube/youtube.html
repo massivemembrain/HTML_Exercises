@@ -15,15 +15,30 @@
             display: block;
         }
 
-        .video-title {
-            width: 300px;
-        }
-
         .video-preview {
             width: 300px;
             display: inline-block;
             vertical-align: top;
             margin-right: 15px;
+        }
+
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .video-info {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .profile-picture {
+            width: 100%;
+        }
+
+        .video-title {
+            margin-top: 0;
         }
         
     </style>
@@ -32,17 +47,26 @@
         <input class="search-bar" type="text" placeholder="Search">
 
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-
-            <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video-author">
-                Marques Brownlee
-            </p>
-            <p class="video-stats">
-                3.4M views &#183; 6 months ago
-            </p>
+            <div>
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </div>
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/marquespfp.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+                
+            </div>
         </div>
 
         <div class="video-preview">
@@ -76,3 +100,8 @@ We can manipulate the type of element using the display property-->
 By default it is a block element
 why use it? it can contain any other elements within it: it's a container
 block elements in div cannot exceed the dimensions of the div-->
+
+<!--Lesson 10: You can do vertical and horizontal layout like columns, rows in other shi
+"Nested layouts technique"
+images overflow, or keep their original dimensions by default
+width: 100% image will take up the entire space of its contianer-->
