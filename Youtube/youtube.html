@@ -4,7 +4,17 @@
     <head>
         <title>Youtube Clone </title>
     </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         /*images keep dimension unless you alter the width AND the height*/
         .thumbnail {
             width: 300px;
@@ -33,12 +43,31 @@
             width: 200px;
         }
 
+        .video-author,
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+
+        }
+
+        .video-author {
+            margin-bottom: 4px;
+        }
+
         .profile-picture {
-            width: 100%;
+            width: 40px;
+            border-radius: 50px;
         }
 
         .video-title {
-            margin-top: 0;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        .thumbnail-row {
+            margin-bottom: 12px;
         }
         
     </style>
@@ -47,7 +76,7 @@
         <input class="search-bar" type="text" placeholder="Search">
 
         <div class="video-preview">
-            <div>
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
             </div>
             <div>
@@ -70,17 +99,26 @@
         </div>
 
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-
-            <p class="video-title">
-                Try Not To Laugh Challenge #9
-            </p>
-            <p class="video-author">
-                Markiplier
-            </p>
-            <p class="video-stats">
-                19M views &#183; 4 years ago
-            </p>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/marquespfp.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Try Not To Laugh Challenge #9
+                    </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+                    <p class="video-stats">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+                
+            </div>
         </div>
     </body>
 </html>
@@ -104,4 +142,5 @@ block elements in div cannot exceed the dimensions of the div-->
 <!--Lesson 10: You can do vertical and horizontal layout like columns, rows in other shi
 "Nested layouts technique"
 images overflow, or keep their original dimensions by default
-width: 100% image will take up the entire space of its contianer-->
+width: 100% image will take up the entire space of its contianer
+To have a backup font if the google font fails, add a comma then a second font like Arial-->
