@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
-<!--Grid: a layout -->
+<!--Grid: a layout similar to flutter
+defined in css with the display property-->
 
 <html>
     <head>
         <title>Grid Practice</title>
     </head>
-    <body>
+    <!--adding padding to the body allows for scrolling-->
+    <body style="padding-bottom: 1000px;">
         <!--length of first column, length of second column, num of values determine number of columns-->
         <div style="
             display: grid;
@@ -43,6 +45,36 @@
             <div style="background-color:lightblue;">100px</div>
             <div style="background-color: lightpink;">1fr</div>
             <div style="background-color:lightblue;">2fr</div>
+
+        </div>
+
+        <!--Now we want to working with resizing a page with the size of the window-->
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 40px;
+        ">
+            <!--inline styles-->
+            <div style="
+            background-color:lightblue;
+            height: 200px;">1fr</div>
+            <div style="
+            background-color: lightpink;
+            height: 200px;">1fr</div>
+            <div style="
+            background-color:lightblue;
+            height: 200px;">1fr</div>
+            <div style="
+            background-color: lightpink;
+            height: 200px;">1fr</div>
+            <div style="
+            background-color:lightblue;
+            height: 200px;">1fr</div>
+            <div style="
+            background-color: lightpink;
+            height: 200px;">1fr</div>
 
         </div>
     </body>
