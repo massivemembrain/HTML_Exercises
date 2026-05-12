@@ -4,8 +4,9 @@
     <head>
         <title>Flexbox Practice</title>
     </head>
-    <body>
-        <!--we are ligning the elements horizontally-->
+    <!--padding to the bottom of body to make it scrollable, making the page longer.-->
+    <body style="padding-bottom: 1000px;">
+        <!--we are aligning the elements horizontally-->
         <!--flex box naturally takes up as much space as it needs-->
         <div style="
             display: flex;
@@ -53,5 +54,92 @@
             <!--flex: 1 functions the same as 1fr in grid, takes up the remaining space-->
         </div>
 
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            ">
+            <div style="
+                background-color: lightblue;
+                width:100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <!--p made both divs taller while maintaining alignment-->
+            <!--flex: 1 functions the same as 1fr in grid, takes up the remaining space-->
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            ">
+            <div style="
+                background-color: lightblue;
+                width:100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <!--p made both divs taller while maintaining alignment-->
+            <!--flex: 1 functions the same as 1fr in grid, takes up the remaining space-->
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            ">
+            <div style="
+                background-color: lightblue;
+                width:100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <!--p made both divs taller while maintaining alignment-->
+            <!--flex: 1 functions the same as 1fr in grid, takes up the remaining space-->
+        </div>
+
     </body>
 </html>
+
+<!--Less rigid example with grid, you define the space elements take within the individual element
+Unlike grid you define in the container of it all-->
+<!--align items is telling how the elements take up space vertically, or the cross axis
+it is set to stretch by default-->
