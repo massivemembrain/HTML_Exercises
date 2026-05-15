@@ -8,20 +8,126 @@
 }
 
 .left-section {
-  background-color: lightblue;
-  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+
+.youtube-logo {
+  height: 20px;
 }
 
 .middle-section {
-  background-color: lightpink;
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
   /* Sets a max width so the flex doesn't get too big */
   max-width: 500px;
+  /* flex direction row is default */
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  /* inset makes the shadow on the inside of the box
+  1 pixel to the right, 2px to the bottom
+  Cartesian coordinate system */
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  /*Has default width or minimum width, use width 0 to counteract that
+  combines with flex property */
+  width: 0;
+
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  /* To make the borders of both elements connected to each other
+  pulls the element toward the left */
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+/* flex-shrink: 0 to not shrink
+width: 0 to shrink */
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  /* Set to have the width and the height to make a circle */
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(243, 243, 243);
+}
+
+.voice-search-icon {
+  height: 24px;
+  margin-top: 4px;
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
+
+/* Flexbox makes it so the space between the icons
+will shink when shinking the window,
+prevent using flex-shrink: 0 property*/
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
+}
+
+/*Flex only affects the first layers of 
+elements within it,
+to go more layers, use nested flex boxes,
+ or do display flex on nested div */
+
+ /* Keep in mind icons can be really big and only
+ a corner is displayed within a small button
+ Counteract this by making the button bigger and fitting
+ the icon within the button*/
