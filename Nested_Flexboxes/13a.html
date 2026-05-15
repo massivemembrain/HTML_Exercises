@@ -4,11 +4,41 @@
         <title>13a</title>
 
         <style>
+            .block {
+                display: flex;
+                height: 100;
+            }
+
+            .pink {
+                flex: 1;
+                background-color: lightpink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .item {
+                color: white;
+                background-color: black;
+            }
+
+            .blue {
+                flex: 2;
+                background-color: lightblue;
+            }
 
         </style>
     </body>
     <head>
-        <div></div>
+        <div class="block">
+            <div class="pink">
+                <p class="item">item1</p>
+            </div>
+            <div class="blue">
+
+            </div>
+
+        </div>
 
     </head>
 </html>
