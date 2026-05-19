@@ -2,9 +2,16 @@
   height: 55px;
   display: flex;
   flex-direction: row;
-  /*Flutter flashback: the elements at the 
-  end will stay on the end regardless of size */
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(227, 227, 227)
 }
 
 .left-section {
@@ -59,7 +66,7 @@
 }
 
 .search-button {
-  height: 40px;
+  height: 39px;
   width: 60px;
   background-color: rgb(240, 240, 240);
   border-width: 1px;

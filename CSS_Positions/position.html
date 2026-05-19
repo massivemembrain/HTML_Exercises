@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Position Practice</title>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+    ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      ">
+      header
+    </div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+
+      bottom: 0;
+      left: 0;
+      top: 50px;
+      width: 72px;
+    ">
+      sidebar
+    </div>
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">div 1</div>
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    ">div 2</div>
+  </body>
+</html>
+<!-- Position static is default, what we've been using
+ Position fixed is how things are fixed on the screen when you scroll-->
+ <!-- Left, right, top, bottom, all properties to determine number of poxels
+  away from edge the div will take. Great for rezisability
+  Keep using height or width if you want a fixed size-->
+<!-- Put padding in body style to offset the space the fixed stuff does -->
